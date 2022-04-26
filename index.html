@@ -43,14 +43,18 @@
 
 
         <div class="filter">
-            <label for="all" class="all">All</label>
-            <input type="radio" id="all" value = "all" name="filter" checked="true">
-
-            <label for="active" class="active">Active</label>
-            <input type="radio" id="active" value = 'active' name="filter">
-
-            <label for="completeFil" class="complete">Completed</label>
-            <input type="radio" id="completeFil" value = 'complete' name="filter">
+            <div>
+                <input type="radio" id="all" value = "all" name="filter" checked>
+                <label for="all" class="all">All</label>
+            </div>
+            <div>
+                <input type="radio" id="active" value = 'active' name="filter">
+                <label for="active" class="active">Active</label>
+            </div>
+            <div>
+                <input type="radio" id="completeFil" value = 'complete' name="filter">
+                <label for="completeFil" class="complete">Completed</label>
+            </div>
         </div>
     </main>
 </body>
