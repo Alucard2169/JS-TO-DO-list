@@ -197,10 +197,11 @@ taskInput.addEventListener('keydown', (e) => {
 // remove a task 
 document.addEventListener('click', (e) => {
     if (e.target.classList.contains('remove')){
+        Store.removeTask(e.target.parentElement.parentElement.children[2].textContent)
         ToDo.removeElement(e)
         ToDo.count(-1)
     }
-    Store.removeTask(e.target.parentElement.parentElement.children[2].textContent)
+
 
 }
 )
