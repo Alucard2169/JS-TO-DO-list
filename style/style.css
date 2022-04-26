@@ -199,8 +199,13 @@ main .filter {
   border-radius: 5px;
 }
 
+main .filter input:checked ~ label {
+  color: blue;
+}
+
 main .filter label {
   color: var(--input-c);
+  display: block;
   font-size: .9rem;
   cursor: pointer;
 }
