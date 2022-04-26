@@ -1,8 +1,8 @@
 function light(mode) {
      if (mode === true) {
-        document.querySelector('header').style.backgroundImage = "url('../images/bg-mobile-light.jpg')";
+        document.querySelector('header').style.backgroundImage = "url('https://github.com/Alucard2169/JS-TO-DO-list/blob/main/images/bg-mobile-light.jpg?raw=true')";
     }
-    document.querySelector('header').style.backgroundImage = "url('../images/bg-desktop-light.jpg')";
+    document.querySelector('header').style.backgroundImage = "url('https://github.com/Alucard2169/JS-TO-DO-list/blob/main/images/bg-desktop-light.jpg?raw=true')";
     document.querySelector('.theme').src = 'images/icon-sun.svg';
   document.documentElement.style.setProperty('--body-c', '#FAFAFA');  
   document.documentElement.style.setProperty('--list-c', '#FFFFFF');  
@@ -14,10 +14,10 @@ function light(mode) {
 
 function dark(mode) {
     if (mode === true) {
-        document.querySelector('header').style.backgroundImage = "url('../images/bg-mobile-dark.jpg')";
+        document.querySelector('header').style.backgroundImage = "url('https://github.com/Alucard2169/JS-TO-DO-list/blob/main/images/bg-mobile-dark.jpg?raw=true')";
     }
     
-    document.querySelector('header').style.backgroundImage = "url('../images/bg-desktop-dark.jpg')";
+    document.querySelector('header').style.backgroundImage = "url('https://github.com/Alucard2169/JS-TO-DO-list/blob/main/images/bg-desktop-dark.jpg?raw=true')";
     document.querySelector('.theme').src = 'images/icon-moon.svg';
   document.documentElement.style.setProperty('--body-c', '#161620');  
   document.documentElement.style.setProperty('--list-c', '#25273C');  
