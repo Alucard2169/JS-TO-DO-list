@@ -82,12 +82,9 @@ main .inputField {
   width: 100%;
 }
 
-main .inputField label {
+main .inputField .circle {
   cursor: pointer;
-}
-
-main .inputField label .circle {
-  width: 19px;
+  width: 21px;
   height: 19px;
   border-radius: 50px;
   border: 1px #2E3045 solid;
