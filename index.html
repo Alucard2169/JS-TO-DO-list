@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <script type="module" src="./src/app.js" defer></script>
+    <title>To-Do-list | Alucard2169</title>
+    <link href="images/favicon-32x32.png" rel="icon">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="upper-bar">
+            <h1 class="site-logo">TODO</h1>
+            <label for="theme" class="themeBtn">
+                <img src="images/icon-moon.svg" alt="light" class="theme">
+                <input type="checkbox" id="theme">
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <div class="inputField">
+            <label for="newTask">
+                <div class="circle"></div>
+            </label>
+            <input type="text" id="newTask" placeholder="Create a new todo...">
+        </div>
+
+        <div class="tasks-list">
+            <ul class="list"></ul>
+
+
+            <div class="stats">
+                <p><span class="num">1</span> items left</p>
+                <button class="compcls">Clear Completed</button>
+            </div>
+        </div>
+
+
+        <div class="filter">
+            <label for="all" class="all">All</label>
+            <input type="radio" id="all" value = "all" name="filter" checked="true">
+
+            <label for="active" class="active">Active</label>
+            <input type="radio" id="active" value = 'active' name="filter">
+
+            <label for="completeFil" class="complete">Completed</label>
+            <input type="radio" id="completeFil" value = 'complete' name="filter">
+        </div>
+    </main>
+</body>
+
+</html>

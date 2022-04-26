@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+  --body-c: #161620;
+  --logo-c: white;
+  --list-c: #25273C;
+  --input-c: #626479;
+  --incomplete-c: #B4B6CD;
+  --bottom-border: #383A4F;
+  --complete-c: #64667D;
+}
+
+body {
+  background-color: var(--body-c);
+}
+
+header {
+  background: url("../images/bg-mobile-dark.jpg") no-repeat top fixed;
+  min-height: 12.5rem;
+  padding: 2.8rem 1.5rem;
+  background-size: contain;
+}
+
+header .upper-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .upper-bar .site-logo {
+  color: var(--logo-c);
+  letter-spacing: 8px;
+  font-size: 1.7rem;
+}
+
+header .upper-bar .themeBtn {
+  cursor: pointer;
+}
+
+header .upper-bar .themeBtn img {
+  width: 80%;
+}
+
+header .upper-bar .themeBtn input {
+  display: none;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 7rem auto 0;
+  width: 90%;
+}
+
+main .inputField {
+  background-color: var(--list-c);
+  padding: .8rem;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+main .inputField label {
+  cursor: pointer;
+}
+
+main .inputField label .circle {
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  border: 1px #2E3045 solid;
+}
+
+main .inputField input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--input-c);
+  width: 100%;
+}
+
+main .tasks-list {
+  margin-top: 1.2rem;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--list-c);
+}
+
+main .tasks-list .list .item {
+  padding: .8rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  border-bottom: 1px var(--bottom-border) solid;
+}
+
+main .tasks-list .list .item .completeBtn::after {
+  visibility: hidden;
+  content: '';
+  top: 0;
+  left: 0;
+  background-image: url("../images/icon-check.svg"), -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
+  background-image: url("../images/icon-check.svg"), linear-gradient(#57ddff, #c058f3);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  border-radius: 100px;
+  position: absolute;
+}
+
+main .tasks-list .list .item .complBtn {
+  display: none;
+}
+
+main .tasks-list .list .item .completeBtn {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  border-radius: 100px;
+  outline: 1px #2E3045 solid;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+main .tasks-list .list .item .completeBtn:hover {
+  outline: 1px #57ddff solid;
+}
+
+main .tasks-list .list .item .job {
+  color: var(--incomplete-c);
+  font-size: .9rem;
+}
+
+main .tasks-list .list .item button {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+main .tasks-list .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .8rem 1rem;
+  color: var(--input-c);
+  font-size: .8rem;
+}
+
+main .tasks-list .stats .compcls {
+  border: none;
+  background-color: transparent;
+  color: var(--input-c);
+  cursor: pointer;
+}
+
+main .filter {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--list-c);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 4.5rem;
+  border-radius: 5px;
+}
+
+main .filter label {
+  color: var(--input-c);
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+main .filter input {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    background-image: url("../images/bg-desktop-dark.jpg");
+    padding-top: 4.4rem;
+    background-size: contain;
+  }
+  header .upper-bar {
+    margin: 0 auto;
+    width: 40%;
+  }
+  main {
+    margin-top: 8rem;
+    width: 40%;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.empty-list {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.complete .completeBtn::after {
+  visibility: visible !important;
+}
+
+.complete span {
+  color: var(--complete-c) !important;
+  position: relative;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */
