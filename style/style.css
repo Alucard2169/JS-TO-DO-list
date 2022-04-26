@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background: url("../images/bg-mobile-dark.jpg") no-repeat top fixed;
+  background: url("https://github.com/Alucard2169/JS-TO-DO-list/blob/main/images/bg-mobile-dark.jpg?raw=true") no-repeat top fixed;
   min-height: 12.5rem;
   padding: 2.8rem 1.5rem;
   background-size: contain;
@@ -211,7 +211,7 @@ main .filter input {
 
 @media screen and (min-width: 1300px) {
   header {
-    background-image: url("../images/bg-desktop-dark.jpg");
+    background-image: url("https://github.com/Alucard2169/JS-TO-DO-list/blob/main/images/bg-desktop-dark.jpg?raw=true");
     padding-top: 4.4rem;
     background-size: contain;
   }
